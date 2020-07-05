@@ -1,0 +1,15 @@
+{ 
+	"languageserver": {
+		"golang": {
+			"command": "~/.config/coc/extensions/coc-go-data/bin/gopls",
+			"rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+			"filetypes": ["go"],
+			"initializationOptions": {
+				"usePlaceholders": true
+			}
+		}
+	}, 
+	"clangd.path": "/home/fbakly/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd",
+	"texlab.path": "/home/fbakly/.config/coc/extensions/coc-texlab-data/texlab",
+	"latex.build.onSave": true
+}
