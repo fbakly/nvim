@@ -4,11 +4,6 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 
-" Window Creation and closing
-nnoremap <leader>ws :split<CR>
-nnoremap <leader>wq :q<CR>
-nnoremap <leader>wv :wincmd v <CR>
-
 " File Manager
 " "nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 
@@ -17,11 +12,16 @@ nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
 nnoremap <leader>bd :bd<CR>
 
+" Tabs
+nnoremap <leader>to :tabnew<CR>
+nnoremap <leader>tp :tabprev<CR>
+nnoremap <leader>tn :tabnext<CR>
+
 " Undo Tree
 nnoremap <leader>u :UndotreeShow<CR>
 
 " Rip grep
-nnoremap <Leader>ps :Rg<SPACE>
+nnoremap <Leader>/ :Rg<SPACE>
 
 " Window Resize
 nnoremap <C-h> :vertical resize +5<CR>
@@ -31,10 +31,7 @@ nnoremap <C-k> :resize +2<CR>
 
 " Terminal Keymaps
 tnoremap <Esc> <C-\><C-n> 
-nnoremap <leader>ot :wincmd v<CR> :wincmd l<CR> :term<CR>
 
 " Remap Escape Key
 inoremap jk <Esc>
 
-"Fix file indentation
-nnoremap <C-i> :norm gg=G<CR>
