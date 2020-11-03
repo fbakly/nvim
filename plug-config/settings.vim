@@ -30,3 +30,5 @@ set formatoptions-=cro
 set termguicolors
 
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+packadd termdebug 										" Adding terminal debugger

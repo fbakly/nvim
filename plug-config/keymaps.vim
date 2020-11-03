@@ -5,7 +5,13 @@ nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 
 " File Manager
-" "nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+"nnoremap <leader>e :Vifm<CR>
+
+" nnn
+" Disable default mappings
+let g:nnn#set_default_mappings = 0
+" Then set your own
+nnoremap <silent> <leader>nn :FloatermNew nnn<CR>
 
 " Buffer movement
 nnoremap <leader>bn :bn<CR>
@@ -14,11 +20,9 @@ nnoremap <leader>bd :bd<CR>
 
 " Tabs
 nnoremap <leader>to :tabnew<CR>
-nnoremap <leader>tp :tabprev<CR>
-nnoremap <leader>tn :tabnext<CR>
 
 " Undo Tree
-nnoremap <leader>u :UndotreeShow<CR>
+nnoremap <leader>u :UndotreeToggle<CR>
 
 " Rip grep
 nnoremap <Leader>/ :Rg<SPACE>
