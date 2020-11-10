@@ -8,10 +8,12 @@ nnoremap <leader>l :wincmd l<CR>
 "nnoremap <leader>e :Vifm<CR>
 
 " nnn
-" Disable default mappings
-let g:nnn#set_default_mappings = 0
-" Then set your own
-nnoremap <silent> <leader>nn :FloatermNew nnn<CR>
+nnoremap <leader>nn :FloatermNew nnn<CR>
+
+" Fuzzy finder
+nnoremap <C-p> :Files<CR>
+nnoremap <C-b> :Buffers<CR>
+
 
 " Buffer movement
 nnoremap <leader>bn :bn<CR>
@@ -25,7 +27,7 @@ nnoremap <leader>to :tabnew<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
 " Rip grep
-nnoremap <Leader>/ :Rg<SPACE>
+nnoremap <Leader>/ :Rg<CR>
 
 " Window Resize
 nnoremap <C-h> :vertical resize +5<CR>
@@ -33,9 +35,14 @@ nnoremap <C-l> :vertical resize -5<CR>
 nnoremap <C-j> :resize -2<CR>
 nnoremap <C-k> :resize +2<CR>
 
-" Terminal Keymaps
-tnoremap <Esc> <C-\><C-n> 
+" Terminal Keymaps Messes with floaterm
+"tnoremap <Esc> <C-\><C-n>
 
 " Remap Escape Key
 inoremap jk <Esc>
 
+"" python PUDB
+"nnoremap <leader>bb :TogglePudbBreakPoint<CR>
+
+" Vimspector
+nnoremap <leader>dd :call vimspector#Launch()<CR>
